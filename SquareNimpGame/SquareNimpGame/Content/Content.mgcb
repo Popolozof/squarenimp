@@ -13,3 +13,8 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin Assets/Maps/map01.txt
+/importer:
+/processor:
+/build:Assets/Maps/map01.txt
+
