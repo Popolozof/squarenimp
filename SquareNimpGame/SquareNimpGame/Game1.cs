@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using SquareNimpGame.Core;
 
 namespace SquareNimpGame
 {
@@ -11,6 +12,8 @@ namespace SquareNimpGame
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+
+        public Map myMap;
 
         public Game1()
         {
@@ -29,6 +32,7 @@ namespace SquareNimpGame
             // TODO: Add your initialization logic here
 
             base.Initialize();
+            myMap = new Map("lel", Content);
         }
 
         /// <summary>
