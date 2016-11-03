@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using SquareNimpGame.Core;
+using System.Diagnostics;
 
 namespace SquareNimpGame
 {
@@ -32,7 +33,8 @@ namespace SquareNimpGame
             // TODO: Add your initialization logic here
 
             base.Initialize();
-            myMap = new Map("lel", Content);
+            Debug.WriteLine(">>>>><");
+            myMap = new Map("Map01");
         }
 
         /// <summary>
@@ -67,7 +69,6 @@ namespace SquareNimpGame
                 Exit();
 
             // TODO: Add your update logic here
-
             base.Update(gameTime);
         }
 
