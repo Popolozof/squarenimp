@@ -14,11 +14,19 @@ namespace SquareNimpGame.Core
 
         public string tileHeight { get; set; }
 
-        public List<string> properties { get; set; }
+        public List<Property> properties { get; set; }
+
+        public string pathSprite { get; set; }
 
         public Tileset()
         {
-            properties = new List<string>();
+            properties = new List<Property>();
         }
     }
+}
+
+public class Property
+{
+    public string propName { get; set; }
+    public string propValue {get; set; }
 }

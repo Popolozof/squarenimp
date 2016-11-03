@@ -12,12 +12,18 @@ namespace SquareNimpGame.Core
 
         public Texture2D texture;
 
-        public int x;
-        public int y;
+        public int x { get; set; }
+        public int y { get; set; }
 
-        public int type;
-        public int id;
+        public Tileset tileset { get; set; }
+        public int id { get; set; }
 
-
+        public int pixelX {
+            get {return x * 32;}
+        }
+        public int pixelY {
+            get {return y * 32;}
+        }
+    
     }
 }
